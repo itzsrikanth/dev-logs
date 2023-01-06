@@ -32,6 +32,20 @@
         "--inspect-brk",
         "${file}"
       ],
+    },
+    
+    // broccoli
+    {
+      "name": "broccoli",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "${workspaceRoot}/node_modules/.bin/broccoli",
+        "build"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
     }
   ]
 }
